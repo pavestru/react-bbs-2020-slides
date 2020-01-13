@@ -1,0 +1,25 @@
+{
+  "name": "react-bbs-2020-slides",
+  "version": "1.0.0",
+  "description": "React Brown-bag Session, Jan 2020",
+  "main": "deck.js",
+  "scripts": {
+    "build": "mdx-deck build deck.js",
+    "start": "mdx-deck deck.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavestru/react-bbs-2020-slides.git"
+  },
+  "author": "Pavel Struhar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavestru/react-bbs-2020-slides/issues"
+  },
+  "homepage": "https://github.com/pavestru/react-bbs-2020-slides#readme",
+  "devDependencies": {
+    "mdx-deck": "^2.5.1",
+    "react-syntax-highlighter": "^12.2.1"
+  }
+}
