@@ -53,6 +53,34 @@ React offers built-in hooks, whichare divided into 3 groups: basic [CLICK]
 
 ---
 
+```jsx
+import React from 'react';
+
+export function Example(props) {
+  return <div>Hello {props.name}!</div>;
+}
+```
+
+---
+
+```jsx
+import React, { useState } from 'react';
+
+export function Example(props) {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      Hello {props.name}!
+      <button onClick={() => setState(count + 1)}>
+        Click me (clicked {count} times)
+      </button>
+    </div>
+  );
+}
+```
+
+---
+
 ## React Class vs. useState Hook
 
 <img src="img/useState_compare_inv.png" />
