@@ -47,7 +47,7 @@ They work only inside function components.
 </ul>
 
 <Notes>
-React offers built-in hooks, whichare divided into 3 groups: basic [CLICK]
+React offers built-in hooks, which are divided into 3 groups: basic [CLICK]
 , additional [CLICK] and custom Hooks [CLICK].
 </Notes>
 
@@ -88,4 +88,12 @@ export function Example(props) {
 <Notes>
 Here we can see on left side the React class usind state and
 od right side useState Hook.
+Perhaps you’re wondering where React keeps the state for Hooks. The answer is it’s kept in the exact same place where 
+React keeps state for classes. React has an internal update queue which is the source of truth for any state, 
+no matter how you define your components.
+
+There are a lot of debates regarding hooks vs classes, what is better, if I should rewrite my whole app to hooks etc. 
+There are no plans to remove classes from React.
+As written in the React docs, at Facebook, they have tens of thousands of components written as classes, and they have 
+absolutely no plans to rewrite them. Instead, they are starting to use Hooks in the new code side by side with classes.
 </Notes>
