@@ -1,8 +1,14 @@
-import { Appear  } from 'mdx-deck'
+import { Appear, Notes } from 'mdx-deck'
 
 import {SomeComponent} from '../components/someComponent.js';
 
 <img src="img/reactHooks.png" />
+
+<Notes>
+Who have already heard about React Hooks?
+Great, more/less than I expected.
+Now we just quickly summarize the main points of React Hooks.
+</Notes>
 
 ---
 
@@ -11,9 +17,22 @@ import {SomeComponent} from '../components/someComponent.js';
 <ul>
   <Appear>
     <li>functions</li>
-    <li>new addition in React 16.8.0</li>
+    <li> >= v16.8.0</li>
+    <li>Hooks don’t work inside classes</li>
   </Appear>
 </ul>
+
+<Notes>
+React Hooks are nothing more but javascript functions.
+[CLICK]
+They let you "hook" into React state and other React Lifecycle features from function components.
+[CLICK]
+React Hooks are available with the release of version 16.8.0 and are 100% backwards-compatible.
+Hooks don’t contain any breaking changes.
+[CLICK]
+Hooks don’t work inside classes — they let you use React without classes.
+They work only inside function components.
+</Notes>
 
 ---
 
@@ -27,12 +46,16 @@ import {SomeComponent} from '../components/someComponent.js';
   </Appear>
 </ul>
 
+<Notes>
+React offers built-in hooks such that we can divide into 3 groups: basic [CLICK]
+, additional [CLICK] and custom Hooks [CLICK].
+</Notes>
+
 ---
 
-## Some code
+## React Class vs. useState Hook
 
-```jsx
-export const (name) => <div>Hello {name}</div>;
-```
+<img src="img/useState_compare.png" />
+
 
 <SomeComponent />
