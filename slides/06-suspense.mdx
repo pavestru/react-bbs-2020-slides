@@ -1,6 +1,60 @@
+import { Appear } from "mdx-deck";
 
-# React Suspense and Concurrent rendering
+# Error Boundary
+
+## "try-catch" for `throw new Error()`
 
 ---
 
-Some text :sunglasses:
+# React Suspense
+
+## "try-catch" for `throw new Promise()`
+
+---
+
+# React Suspense
+
+## API still experimental
+
+---
+
+```jsx
+const ProfilePage = React.lazy(() => import("./ProfilePage"));
+
+<Suspense fallback={<Spinner />}>
+  <ProfilePage />
+</Suspense>;
+```
+
+---
+
+# Concurrent rendering
+
+## Putting User Experience First
+
+---
+
+# Understanting Event Loop
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/8aGhZQkoFbQ"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+Event Loop playground: http://latentflip.com/loupe
+
+---
+
+# Concurrent rendering
+
+<ul>
+  <Appear>
+    <li>Splits rendering into chunks</li>
+    <li>Puts them into batch</li>
+    <li>Able to interrupt, cancel rendering</li>
+  </Appear>
+</ul>

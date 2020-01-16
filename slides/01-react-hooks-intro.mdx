@@ -16,7 +16,7 @@ Now we just quickly summarize the main points of React Hooks.
 
 <ul>
   <Appear>
-    <li>functions</li>
+    <li>JS functions</li>
     <li> >= v16.8.0</li>
     <li>Hooks don’t work inside classes</li>
   </Appear>
@@ -40,8 +40,8 @@ They work only inside function components.
 
 <ul>
   <Appear>
-    <li>Basic Hooks (useState, useEffect, useContext)</li>
-    <li>Additional Hooks (useCallback, useMemo, useRef…)</li>
+    <li>Basic Hooks (<strong>useState, useEffect, useContext</strong>)</li>
+    <li>Additional Hooks (<strong>useCallback, useMemo, useRef </strong>…)</li>
     <li>Custom Hooks</li>
   </Appear>
 </ul>
@@ -52,6 +52,8 @@ React offers built-in hooks, which are divided into 3 groups: basic [CLICK]
 </Notes>
 
 ---
+
+## Function component
 
 ```jsx
 import React from 'react';
@@ -71,7 +73,7 @@ export function Example(props) {
   return (
     <div>
       Hello {props.name}!
-      <button onClick={() => setState(count + 1)}>
+      <button onClick={() => setCount(count + 1)}>
         Click me (clicked {count} times)
       </button>
     </div>
