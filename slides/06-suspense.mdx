@@ -2,13 +2,19 @@ import { Appear } from "mdx-deck";
 
 # Error Boundary
 
-## "try-catch" for `throw new Error()`
+## "try-catch" for
+```javascript
+throw new Error()
+```
 
 ---
 
 # React Suspense
 
-## "try-catch" for `throw new Promise()`
+## "try-catch" for
+```javascript
+throw new Promise()
+```
 
 ---
 
@@ -19,7 +25,8 @@ import { Appear } from "mdx-deck";
 ---
 
 ```jsx
-const ProfilePage = React.lazy(() => import("./ProfilePage"));
+const ProfilePage
+  = React.lazy(() => import("./ProfilePage"));
 
 <Suspense fallback={<Spinner />}>
   <ProfilePage />
@@ -44,6 +51,8 @@ const ProfilePage = React.lazy(() => import("./ProfilePage"));
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
 ></iframe>
+
+https://www.youtube.com/watch?v=8aGhZQkoFbQ
 
 Event Loop playground: http://latentflip.com/loupe
 
